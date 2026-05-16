@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../img/Ham logo.png" type="logo_hamburguesa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../pages/Quienes_somos.html">Quienes Somos</a>
+            <a href="../pages/Productos.html">Productos</a>
+            <a href="../pages/Promociones.html">Promociones</a>
+            <a href="../pages/Contacto.html">Contacto</a>
+        </nav>
+
+        <div class="datos">
+            <div class="datos_1">
+                <img class="icon_telefono" src="../img/icono telefono.webp" alt="logo telefono">
+                <div class="">
+                    <p>Cel: (+54 9) 11-1234-5678</p>
+                </div>
+            </div>
+
+            <div class="datos_2">
+                <img class="icon_correo" src="../img/icono correo.jpg" alt="logo correo">
+                <div class="">
+                    <p>correo@gmail.com.ar</p>
+                    <p>Buenos Aires, CABA</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="contacto">
+            <h1 class="titulo_hamburguesas">Contactanos</h1>
+            <p class="texto_contacto">
+                ¿Querés pedir un presupuesto, contratar un catering
+                o enviarnos una sugerencia? Completá el formulario y
+                nos pondremos en contacto con vos.</p>
+
+
+            <p class="campos_obligatorios">Los campos marcados con (*) son obligatorios.</p>
+            <form class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <small>Ingrese nombre y apellido.</small>
+                </div>
+
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" required>
+                    <small>usuario@correo.com</small>
+                </div>
+
+
+                <div class="campo">
+                    <label for="telefono">Teléfono <span>*</span></label>
+                    <input type="tel" id="telefono" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Comentario</label>
+                    <textarea id="mensaje" name="mensaje" maxlength="300" rows="6" placeholder="Escriba aquí su mensaje..."
+                        required></textarea>
+
+                    <small>Máximo permitido: 300 caracteres.</small>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer_copy">
+            <p>© 2026 Hamburguesas - Sitio Web desarrollado por <span>K@hio</span>.</p>
+        </div>
+
+    </footer>
+    <img class="whatsapp" src="../img/whatssap icon.avif" alt="Icono de whatsapp">
+
+</body>
+
+</html>
