@@ -40,6 +40,7 @@ nav {
   text-align: center;
 }
 nav a {
+  display: inline-block;
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -47,6 +48,7 @@ nav a {
 }
 nav a:hover {
   color: orange;
+  transform: scale(1.08);
 }
 
 .datos {
@@ -110,9 +112,11 @@ main {
   padding: 15px 30px;
   text-decoration: none;
   border-radius: 10px;
+  transition: 0.3s;
 }
 .boton_productos:hover {
   background: black;
+  transform: translateY(-4px);
 }
 
 .principal_imagen {
@@ -143,13 +147,11 @@ main {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  cursor: pointer;
   transition: 0.3s;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
 }
 .whatsapp:hover {
-  transform: scale(1.1);
+  transform: scale(1.15) rotate(8deg);
 }
 
 /*Formulario y página de contacto*/
@@ -241,38 +243,25 @@ footer {
   border-radius: 15px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.35s ease;
 }
 .card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   border-radius: 10px;
-  transition: 0.3s;
+  transition: 0.35s;
 }
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 .card:hover img {
   transform: scale(1.05);
-}
-
-.hamburguesas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 40px;
-}
-
-.promos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  padding: 40px;
 }
 
 /* MAIN QUIENES SOMOS */
