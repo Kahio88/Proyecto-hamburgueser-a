@@ -184,6 +184,10 @@ main {
   border-radius: 10px;
   border: 1px solid lightgray;
 }
+.campo textarea {
+  resize: none;
+  min-height: 120px;
+}
 .campo small {
   margin-top: 5px;
   color: gray;
