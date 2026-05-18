@@ -264,6 +264,20 @@ footer {
   transform: scale(1.05);
 }
 
+.hamburguesas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px;
+}
+
+.promos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 40px;
+}
+
 /* MAIN QUIENES SOMOS */
 .quienes_somos {
   padding: 40px;
