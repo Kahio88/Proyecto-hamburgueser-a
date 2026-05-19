@@ -57,11 +57,6 @@ nav {
             color: $color-secundario;
             transform: scale(1.08);
         }
-        &:focus-visible {
-        outline:3px solid orange;
-        outline-offset:5px;
-        border-radius:5px;
-        }
     }
 }
 
