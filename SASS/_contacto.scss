@@ -1,0 +1,75 @@
+@use "variables";
+@use "mixins";
+
+/*Formulario y página de contacto*/
+.contacto {
+    padding: 40px;
+}
+
+.formulario {
+    max-width: 700px;
+    margin: auto;
+    background: variables.$color-blanco;
+    padding: 30px;
+    border-radius: 15px;
+    display: grid;
+    gap: 20px;
+    @include mixins.sombra;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+    }
+
+    textarea{
+    resize:none;
+    min-height:120px;
+    }
+
+    small {
+        margin-top: 5px;
+        color: gray;
+    }
+
+    span {
+        color: variables.$color-principal;
+    }
+}
+
+.formulario button {
+    background: variables.$color-principal;
+    color: variables.$color-blanco;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+        background: variables.$color-secundario;
+    }
+}
+
+.texto_contacto {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 700px;
+    font-size: 18px;
+}
+
+.campos_obligatorios {
+    text-align: center;
+    margin-bottom: 20px;
+    color: variables.$color-principal;
+    font-size: 15px;
+}

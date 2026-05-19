@@ -1,0 +1,23 @@
+@use "variables";
+
+/*FOOTER*/
+footer {
+    background: variables.$color-footer;
+    margin-top: 50px;
+    border-top: 3px solid variables.$color-principal;
+}
+
+.footer_copy {
+    text-align: center;
+    color: variables.$color-blanco;
+    padding: 25px;
+    font-size: 18px;
+
+    span {
+        color: variables.$color-secundario;
+
+        &:hover {
+            color: variables.$color-principal;
+        }
+    }
+}

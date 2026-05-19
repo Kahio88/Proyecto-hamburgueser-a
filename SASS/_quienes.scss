@@ -1,0 +1,47 @@
+@use "variables";
+@use "mixins";
+
+/*QUIENES SOMOS */
+.quienes_somos {
+    padding: 40px;
+    display: grid;
+    gap: 40px;
+}
+
+.historia,
+.prestigio {
+    background: variables.$color-blanco;
+    padding: 30px;
+    border-radius: 15px;
+    @include mixins.sombra;
+
+    h2 {
+        color: variables.$color-principal;
+        margin-bottom: 15px;
+    }
+
+    p {
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+}
+
+.ubicacion {
+    background: variables.$color-blanco;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    @include mixins.sombra;
+
+    h2 {
+        color: variables.$color-principal;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 800px;
+        height: 350px;
+        border-radius: 15px;
+    }
+}

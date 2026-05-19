@@ -1,0 +1,132 @@
+@use "variables";
+
+/* SMARTPHONES */
+@media (max-width:480px) {
+
+    /* HEADER */
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+
+        a {
+            font-size: 18px;
+        }
+    }
+
+    .datos {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .datos_1,
+    .datos_2 {
+        gap: 5px;
+    }
+
+    /* INICIO */
+    .principal_ham {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .principal_texto {
+        width: 100%;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .principal_imagen {
+        max-width: 300px;
+    }
+
+    .carousel-item img {
+        height: 220px;
+    }
+
+    /* PRODUCTOS */
+    .hamburguesas {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    /* PROMOS */
+    .promos {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACTO */
+    .formulario {
+        padding: 20px;
+    }
+
+    /* MAPA */
+    .ubicacion iframe {
+        height: 250px;
+    }
+}
+
+/* TABLETS */
+@media (min-width:481px) and (max-width:768px) {
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    nav {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .datos {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 15px;
+    }
+
+    .principal_ham {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .principal_texto {
+        width: 100%;
+
+        h1 {
+            font-size: 55px;
+        }
+    }
+
+    .principal_imagen {
+        max-width: 400px;
+    }
+
+    .carousel-item img {
+        height: 350px;
+    }
+
+    .hamburguesas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promos {
+        grid-template-columns: 1fr;
+    }
+}

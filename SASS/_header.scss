@@ -1,0 +1,64 @@
+@use "variables";
+/* HEADER */
+
+header * {
+font-family:"Oswald";
+}
+
+header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    background-color: variables.$color-header;
+    padding: 10px 20px;
+    border-bottom: 3px solid variables.$color-principal;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: variables.$color-blanco;
+        font-size: 20px;
+        transition: .3s;
+
+        &:hover {
+            color: variables.$color-secundario;
+            transform: scale(1.08);
+        }
+    }
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    p {
+        margin: 0;
+        line-height: 1.2;
+        font-size: 10px;
+    }
+}
+
+.datos_1,
+.datos_2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: variables.$color-blanco;
+}
+
+.icon_telefono,
+.icon_correo {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
